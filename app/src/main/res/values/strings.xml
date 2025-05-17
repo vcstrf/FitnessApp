@@ -17,4 +17,8 @@
 с политикой конфиденциальности и обработки персональных данных, а также принимаете пользовательское соглашение</string>
     <string name="label_back_sign_in">Вход</string>
     <string name="label_final_sign_in">Войти</string>
+    <string name="activity">Активность</string>
+    <string name="profile">Профиль</string>
+    <string name="my_activity">Моя</string>
+    <string name="users_activity">Пользователей</string>
 </resources>

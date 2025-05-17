@@ -42,6 +42,15 @@ class SignUpActivity : Activity() {
             tv.text = spanstr
         }
 
+        val signUpButton = findViewById<Button>(R.id.registerButton)
+        signUpButton.setOnClickListener {
+            val intent = Intent(this, MainNavigationActivity::class.java)
+
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+
+            startActivity(intent)
+            finish()
+        }
     }
 }
 
