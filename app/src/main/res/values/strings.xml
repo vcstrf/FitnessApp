@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Fitness Tracker</string>
+    <string name="label_best_tracker">Пожалуй, лучший фитнес трекер в ДВФУ</string>
+    <string name="label_made_by">Созданный студентами</string>
+    <string name="label_sign_up">Зарегистрироваться</string>
+    <string name="label_sign_in">Уже есть аккаунт?</string>
+    <string name="label_registration">Регистрация</string>
+    <string name="label_login">Логин</string>
+    <string name="label_password">Пароль</string>
+    <string name="label_repeat_password">Повторите пароль</string>
+    <string name="label_nickname">Имя или никнейм</string>
+    <string name="label_gender">Пол</string>
+    <string name="label_gender_male">Мужской</string>
+    <string name="label_gender_female">Женский</string>
+    <string name="label_gender_other">Другое</string>
+    <string name="label_policy">Нажимая на кнопку, вы соглашаетесь
+с политикой конфиденциальности и обработки персональных данных, а также принимаете пользовательское соглашение</string>
+    <string name="label_back_sign_in">Вход</string>
+    <string name="label_final_sign_in">Войти</string>
+</resources>
