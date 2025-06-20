@@ -2,10 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/activity_tab"
-        android:title="@string/activity"
+        android:title="@string/label_activity"
         android:icon="@drawable/sports"/>
     <item
         android:id="@+id/profile_tab"
-        android:title="@string/profile"
+        android:title="@string/label_profile"
         android:icon="@drawable/person"/>
 </menu>

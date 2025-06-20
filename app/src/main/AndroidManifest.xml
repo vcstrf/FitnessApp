@@ -24,6 +24,9 @@
             android:name=".ActivityDetailsActivity"
             android:exported="false"/>
         <activity
+            android:name=".NewActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true" >
             <intent-filter>

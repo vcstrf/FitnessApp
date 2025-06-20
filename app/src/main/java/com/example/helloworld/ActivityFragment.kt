@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.tabs.TabLayoutMediator
 import androidx.recyclerview.widget.RecyclerView
 import android.content.Intent
+import android.widget.ImageView
 import androidx.recyclerview.widget.LinearLayoutManager
 
 class ActivityFragment : Fragment() {
@@ -33,13 +34,20 @@ class ActivityFragment : Fragment() {
         viewPager.adapter = ViewPagerAdapter(this)
 
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
-            tab.text = when(position) {
+            tab.text = when (position) {
                 0 -> "Моя"
                 1 -> "Пользователей"
                 else -> null
             }
         }.attach()
+
+        val buttonNewActivity = view.findViewById<ImageView>(R.id.buttonStart)
+        buttonNewActivity.setOnClickListener {
+            val intent = Intent(requireContext(), NewActivity::class.java)
+            startActivity(intent)
+        }
     }
+
 }
 
 class ViewPagerAdapter(fragment: Fragment) : androidx.viewpager2.adapter.FragmentStateAdapter(fragment) {

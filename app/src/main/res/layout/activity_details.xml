@@ -39,7 +39,7 @@
             android:id="@+id/buttonDelete"
             android:layout_width="16dp"
             android:layout_height="16dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginEnd="20dp"
             android:src="@drawable/delete"
             app:layout_constraintBottom_toBottomOf="@id/buttonBack"
             app:layout_constraintEnd_toStartOf="@id/buttonShare"
@@ -129,7 +129,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/comment" />
+                android:hint="@string/label_comment" />
         </com.google.android.material.textfield.TextInputLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

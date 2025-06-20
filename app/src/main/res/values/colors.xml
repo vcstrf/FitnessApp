@@ -10,5 +10,6 @@
     <color name="dark_grey">#101010</color>
     <color name="light_grey">#808080</color>
     <color name="purple">#4B09F3</color>
+    <color name="red">#FF0000</color>
     <color name="background_gray">#F0F0F0</color>
 </resources>

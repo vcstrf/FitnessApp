@@ -7,6 +7,8 @@
     <string name="label_registration">Регистрация</string>
     <string name="label_login">Логин</string>
     <string name="label_password">Пароль</string>
+    <string name="label_old_password">Старый пароль</string>
+    <string name="label_new_password">Новый пароль</string>
     <string name="label_repeat_password">Повторите пароль</string>
     <string name="label_nickname">Имя или никнейм</string>
     <string name="label_gender">Пол</string>
@@ -17,9 +19,15 @@
 с политикой конфиденциальности и обработки персональных данных, а также принимаете пользовательское соглашение</string>
     <string name="label_back_sign_in">Вход</string>
     <string name="label_final_sign_in">Войти</string>
-    <string name="activity">Активность</string>
-    <string name="profile">Профиль</string>
-    <string name="my_activity">Моя</string>
-    <string name="users_activity">Пользователей</string>
-    <string name="comment">Комментарий</string>
+    <string name="label_activity">Активность</string>
+    <string name="label_profile">Профиль</string>
+    <string name="label_my_activity">Моя</string>
+    <string name="label_users_activity">Пользователей</string>
+    <string name="label_comment">Комментарий</string>
+    <string name="label_log_out">Выйти</string>
+    <string name="label_confirm">Принять</string>
+    <string name="label_save">Сохранить</string>
+    <string name="label_change_password">Изменить пароль</string>
+    <string name="label_letsgo">Погнали? :)</string>
+    <string name="label_start">Начать</string>
 </resources>

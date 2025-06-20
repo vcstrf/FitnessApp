@@ -82,15 +82,11 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/signInButton"
+        style="@style/CustomMaterialButton"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_marginHorizontal="16dp"
-        android:paddingVertical="12dp"
         android:text="@string/label_final_sign_in"
-        android:textStyle="bold"
-        android:textSize="16sp"
-        android:textAllCaps="false"
         app:backgroundTint="@color/purple"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
