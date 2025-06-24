@@ -8,11 +8,6 @@ import android.widget.ImageView
 import androidx.fragment.app.Fragment
 
 class EditPasswordFragment : Fragment() {
-
-    companion object {
-        const val TAG = "edit_password_fragment"
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

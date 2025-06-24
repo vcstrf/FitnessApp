@@ -1,7 +1,5 @@
 package com.example.helloworld
-import android.content.Intent
 import android.os.Bundle
-import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import android.view.View
@@ -16,26 +14,27 @@ class ActivityDetailsActivity : AppCompatActivity() {
         val distanceText = findViewById<TextView>(R.id.distanceText)
         val timeAgoText = findViewById<TextView>(R.id.timeAgoText)
         val durationText = findViewById<TextView>(R.id.durationText)
-        val timeRangeText = findViewById<TextView>(R.id.timeRangeText)
+        val startTimeText = findViewById<TextView>(R.id.startTimeText)
+        val finishTimeText = findViewById<TextView>(R.id.finishTimeText)
         val usernameText = findViewById<TextView>(R.id.usernameText)
 
-        val activity = intent.getParcelableExtra<ActivityItem.ActivityMain>("ACTIVITY_MAIN")
+        val activity = intent.getSerializableExtra("ACTIVITY") as? Activity
 
         activity?.let {
             titleText.text = it.type
             distanceText.text = it.distance
             timeAgoText.text = it.timeAgo
             durationText.text = it.duration
-            timeRangeText.text = it.timeRange ?: "Старт 14:49  |  Финиш 16:31"
+            startTimeText.text = if (activity.startTime.isBlank()) "00:25" else activity.startTime
+            finishTimeText.text = if (activity.finishTime.isBlank()) "|  00:50" else "|  " + it.finishTime
 
-            if (it.isFromOtherUser && !it.username.isNullOrEmpty()) {
+            if (it.isFromOtherUser == true && !it.user.isNullOrEmpty()) {
                 usernameText.visibility = View.VISIBLE
-                usernameText.text = it.username
+                usernameText.text = it.user
             } else {
                 usernameText.visibility = View.GONE
             }
         }
-
 
         val buttonBack = findViewById<ImageView>(R.id.buttonBack)
         buttonBack.setOnClickListener {

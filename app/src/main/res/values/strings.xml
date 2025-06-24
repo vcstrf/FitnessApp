@@ -30,4 +30,6 @@
     <string name="label_change_password">Изменить пароль</string>
     <string name="label_letsgo">Погнали? :)</string>
     <string name="label_start">Начать</string>
+    <string name="label_time_to_train">Время потренить</string>
+    <string name="label_choose_activity">Нажимай на кнопку ниже и начинаем трекать активность</string>
 </resources>
